@@ -1,0 +1,116 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f1f0f6;
+}
+
+:root {
+  --title-color: #322153;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--title-color);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+#page-home {
+  height: 100vh;
+  background: #f1f0f6 url('/images/icones/home-background.svg') no-repeat right bottom -80px;
+  background-size: 750px;
+}
+
+header {
+  width: 100%;
+  padding: 50px 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+  background: url('/images/icones/logo.svg') no-repeat;
+  background-size: 100%;
+  font-size: 0;
+  display: block;
+  float: left;
+}
+
+.btn-cadastro {
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.btn-cadastro:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(/images/icones/log-in.svg) no-repeat center;
+  margin: 0 5px -9px 0;
+}
+
+#page-home main {
+  flex: 1;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-home main {
+  flex: 1;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-home main h1 {
+  font-size: 58px;
+  margin: 0 0 20px;
+}
+
+#page-home main h2 {
+  font-size: 24px;
+  margin: 0 0 20px;
+  font-weight: normal;
+  color: grey;
+}
+
+#page-home main button {
+  background: #34CC79;
+  border-radius: 10px;
+  padding: 20px 0 20px 62px;
+  color: white;
+  border: none;
+  width: 300px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 0;
+}
+
+#page-home main button:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #32BA72 url(/images/icones/search.svg) no-repeat center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
