@@ -1,0 +1,131 @@
+/* Página de Cadastro de Ponto de Coleta */
+#cadastro-ponto {
+
+}
+
+.btn-home {
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-home:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/icones/arrow-left.svg) no-repeat center;
+  margin: 0 5px -9px 0;
+}
+
+#cadastro-ponto form {
+  background: white;
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+
+#cadastro-ponto form fieldset {
+  border: none;
+  margin: 10px 0 40px;
+  padding: 0;
+}
+#cadastro-ponto form fieldset legend {
+  width: 100%;
+}
+#cadastro-ponto form fieldset .aviso {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6C6C80;
+  float: right;
+  margin: -45px 0 0;
+}
+
+#cadastro-ponto form fieldset input[type="text"] {
+  border: none;
+  background: #F0F0F5;
+  border-radius: 8px;
+  width: 90%;
+  padding: 15px 5%;
+}
+
+#cadastro-ponto form fieldset select {
+  border: none;
+  background: #F0F0F5;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px 5%;
+}
+
+#cadastro-ponto form fieldset label {
+  font-family: Roboto;
+  font-size: 14px;
+  padding: 10px 0;
+  display: block;
+}
+
+#cadastro-ponto form .field {
+  
+}
+#cadastro-ponto form .field-group {
+  display: flex;
+}
+#cadastro-ponto form .field-group .field {
+  flex: 1;
+  margin: 0 5px;
+}
+
+#cadastro-ponto form .items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 0;
+}
+
+#cadastro-ponto form .items-grid li {
+  list-style: none;
+  background: #E1FAEC;
+  height: 110px;
+  padding: 50px 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #E1FAEC;
+}
+
+#cadastro-ponto form .items-grid li.selected {
+  background: #c8ffe0;
+  border: 2px solid #34CB79;
+  font-weight: bold;
+}
+
+#cadastro-ponto form .items-grid li img {
+  pointer-events: none;
+}
+#cadastro-ponto form .items-grid li span {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--title-color);
+  pointer-events: none;
+}
+
+#cadastro-ponto form button {
+  background: #34CB79;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  border: none;
+  width: 300px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  float: right;
+}

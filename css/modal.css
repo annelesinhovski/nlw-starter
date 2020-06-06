@@ -1,0 +1,74 @@
+/* Modal de Busca por Ponto de Coleta */
+#modal {
+    width: 100vw;
+    height: 100vh;
+    background: #0E0A14ef;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 400ms;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal.hide {
+    display: none;
+}
+
+#modal .content {
+    width: 420px;
+    color: white;
+    margin: 0 auto;
+}
+
+#modal .content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal .content .header a {
+    background: url(../images/icones/x.svg);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0;
+    justify-items: right;
+}
+
+#modal .content .header h1 {
+    font-size: 36px;
+    color: white
+}
+
+#modal .content .field {
+    display: flex;
+}
+
+#modal .content label {
+    display: block;
+    margin: 10px 0;
+}
+
+#modal .content input[type="text"] {
+    background: #f0f0f5;
+    flex: 1;
+    height: 25px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    padding: 16px 24px;
+    font-size: 16px;
+}
+
+#modal .content button {
+    background: #34CB79;
+    width: 57px;
+    height: 57px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+#modal .content button:hover {
+    background: #2fb85e;
+}
+
