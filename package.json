@@ -1,0 +1,27 @@
+{
+  "name": "nlw-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annelesinhovski/nlw-starter.git"
+  },
+  "keywords": [],
+  "author": "Anne Lesinhovski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annelesinhovski/nlw-starter/issues"
+  },
+  "homepage": "https://github.com/annelesinhovski/nlw-starter#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

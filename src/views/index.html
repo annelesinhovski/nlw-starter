@@ -1,0 +1,25 @@
+{% extends "partials/layout.html" %}
+
+{% set bodyId = "page-home" %}
+
+{% block title %}
+  <title>Ecoleta - Início</title>
+{% endblock title %}
+
+{% block header %}
+  <a href="/" class="logo">Ecoleta</a>
+  <a href="/cadastrar-ponto-coleta" class="btn-cadastro">Cadastre um ponto de coleta</a>
+{% endblock header %}
+{% block main %}
+  <h1>Seu marketplace de coleta de resíduos</h1>
+  <h2>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</h2>
+  <button>Pesquisar pontos de coleta</button>
+{% endblock main %}
+
+{% block addExtraIncludes %}
+  {% include "partials/modal-search.html" %}
+{% endblock addExtraIncludes %}
+
+{% block addJS %}
+  <script src="js/geral.js"></script>
+{% endblock addJS %}
