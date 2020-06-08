@@ -22,8 +22,8 @@
 #cadastro-ponto form {
   background: white;
   max-width: 730px;
-  margin: 0 auto;
-  padding: 30px 50px;
+  margin: 0 auto 80px;
+  padding: 30px 50px 120px;
 }
 
 #cadastro-ponto form fieldset {

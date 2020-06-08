@@ -39,6 +39,15 @@ function getCities(event) {
 
 document.querySelector("select[name=uf]").addEventListener("change", getCities);
 
+document.querySelector("select[name=city]").addEventListener("change", (event) => {
+    const indexOfSelectedCity = event.target.selectedIndex;
+    const cityInput = document.querySelector("[name=city]");
+    cityInput.value = event.target.options[indexOfSelectedCity].text;
+    document.querySelector("input[name=city]").setAttribute('value', cityInput.value);
+});
+
+    
+
 // Itens de coleta
 const itemsToCollect = document.querySelectorAll(".items-grid li");
 

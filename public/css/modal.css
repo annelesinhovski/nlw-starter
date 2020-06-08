@@ -72,3 +72,14 @@
     background: #2fb85e;
 }
 
+#modal .content.cadastro h1,
+#modal .content.cadastro p {
+    color: white;
+    text-align: center;
+}
+
+#modal .content.cadastro img {
+    margin: 0 auto;
+    display: block;
+}
+
