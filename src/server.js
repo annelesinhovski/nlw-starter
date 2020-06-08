@@ -54,7 +54,9 @@ server.post("/savepoint", (req,res) => {
         req.body.city,
         req.body.items
     ]
-    
+
+    console.log(values);
+
     function afterInsertData(err) {
         if (err) {
             console.log(err)
@@ -69,9 +71,15 @@ server.post("/savepoint", (req,res) => {
 
 // resultado de pesquisa
 server.get("/resultado-pesquisa", (req, res) => {
+    const search = req.query.search;
+
+    if (search == "") {
+        // pesquisa vazia
+        return res.render("resultado-pesquisa.html", {total: 0})
+    }
 
     // pegar os dados do banco de dados
-    db.all(`SELECT * FROM places`, function (err, rows) {
+    db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function (err, rows) {
         if (err) {
             return console.log(err)
         }

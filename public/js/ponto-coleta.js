@@ -15,7 +15,7 @@ function populateUFs() {
 populateUFs();
 
 function getCities(event) {
-    const citySelect = document.querySelector("select[name=city]");
+    const citySelect = document.querySelector("select[name=cityselect]");
     const ufValue = event.target.value;
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`;
 
@@ -39,7 +39,7 @@ function getCities(event) {
 
 document.querySelector("select[name=uf]").addEventListener("change", getCities);
 
-document.querySelector("select[name=city]").addEventListener("change", (event) => {
+document.querySelector("select[name=cityselect]").addEventListener("change", (event) => {
     const indexOfSelectedCity = event.target.selectedIndex;
     const cityInput = document.querySelector("[name=city]");
     cityInput.value = event.target.options[indexOfSelectedCity].text;

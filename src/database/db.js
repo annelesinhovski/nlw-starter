@@ -9,18 +9,18 @@ module.exports = db
 // utilizar o objeto de banco de dados para nossas operações
 db.serialize(() => {
     // criar uma tabela
-    // db.run(`
-    //     CREATE TABLE IF NOT EXISTS places (
-    //         id INTEGER PRIMARY KEY AUTOINCREMENT,
-    //         image TEXT,
-    //         name TEXT,
-    //         address TEXT,
-    //         address2 TEXT,
-    //         state TEXT,
-    //         city TEXT,
-    //         items TEXT
-    //     )
-    // `)
+    db.run(`
+        CREATE TABLE IF NOT EXISTS places (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            image TEXT,
+            name TEXT,
+            address TEXT,
+            address2 TEXT,
+            state TEXT,
+            city TEXT,
+            items TEXT
+        )
+    `)
     // // inserir dados na tabela
     // const query = `
     //     INSERT INTO places (
